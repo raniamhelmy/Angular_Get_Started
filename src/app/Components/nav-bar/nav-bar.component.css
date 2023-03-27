@@ -10,7 +10,7 @@
 
 .navbar small {
   font-family: "Montserrat", sans-serif;
-  font-size: 12.8px;
+  font-size: .8rem;
   font-weight: 700;
 }
 
@@ -69,4 +69,11 @@
 }
 #navbar-scrollSpy.paddingNav .navbar-brand {
   font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 353.9808px) {
+  #navbar-scrollSpy.paddingNav .navbar-brand {
+    font-size: 1.25rem;
+  }
 }
