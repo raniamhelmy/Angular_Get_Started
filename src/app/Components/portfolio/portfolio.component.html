@@ -1,0 +1,51 @@
+<section class="portfolio-section mb-0" id="portfolio">
+  <div class="container">
+    <h2 class="page-section-heading text-center text-uppercase">portfolio</h2>
+    <!-- Title Icon -->
+    <app-title></app-title>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 col-lg-4 mb-5" *ngFor = "let obj of images" >
+        <div class="portfolio-item mx-auto position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="showModal(obj)">
+          <div
+            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100 rounded"
+          >
+            <div
+              class="portfolio-item-caption-content text-center text-white"
+            >
+            <i class="fa-solid fa-plus fa-5x fa-bold"></i>
+        </div>
+          </div>
+          <img class="img-fluid rounded" [src]="obj.img" alt="obj.alt" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Modal -->
+  <div class="container bg-white">
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header text-center">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <h2 class="page-section-heading text-center text-uppercase">{{objDetails.title}}</h2>
+            <!-- Title Icon -->
+            <app-title></app-title>
+            <img class="img-fluid rounded mb-5" [src]=objDetails.img [alt]=objDetails.alt>
+            <div class="container w-75">
+               <p class="mb-3">{{objDetails.desc}}</p> 
+            </div>
+        </div>
+        <div class="modal-footer text-center mx-auto mb-4">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-xmark text-white"></i> Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+  </div>
+  
+

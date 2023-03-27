@@ -1,0 +1,8 @@
+.copyright{
+    background-color: #1a252f;
+}
+.copyright small{
+    font-size: .8125rem;
+    font-family: 'Lato',sans-serif!important;
+    font-weight: 400;
+}

@@ -1,0 +1,74 @@
+.page-section-heading {
+  font-size: 48px;
+  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.page-section p {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+
+/**************************Placeholder Animation Styling**************************************/
+label  {
+    position: absolute;
+    top:30%;
+    left: .625rem;
+    transform: translateY(-50%);
+    color:rgb(170, 167, 167);
+    pointer-events: none;
+    transition: all 200ms linear;
+    font-family: "Lato",sans-serif;
+    font-size: 1.6rem;
+  }
+
+ textarea ~ label  {
+  top:10%;
+}
+
+.form-control{
+  border:none;
+}
+  
+  :is(input):focus ~ label ,
+  :is(input):not(:placeholder-shown) ~ label,
+  :is(textarea):focus ~ label ,
+  :is(textarea):not(:placeholder-shown) ~ label {
+    top: 0;
+    transform: translateY(0) ;
+    font-size: 0.65rem;
+    color: #1abc9c;
+  }
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: transparent !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control{
+    border-bottom: 2px solid #e9ecef;
+    border-radius:0 ;
+}
+
+/*******************************************************************************/
+
+#contact .form-group .btn-success {
+  --bs-btn-bg: #1abc9c;
+  --bs-btn-border-color: #1abc9c;
+  --bs-btn-disabled-bg: #1abc9c;
+  --bs-btn-disabled-border-color: #1abc9c;
+}
+
+#contact .form-group .btn {
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 0.65rem;
+}
