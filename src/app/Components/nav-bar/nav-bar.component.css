@@ -71,9 +71,12 @@
   font-size: 1.5em;
 }
 
+#navbar-scrollSpy .navbar-brand {
+  font-size: 1.17em;
+}
 
-@media screen and (max-width: 353.9808px) {
+@media screen and (max-width: 370.9808px) {
   #navbar-scrollSpy.paddingNav .navbar-brand {
-    font-size: 1.25rem;
+    font-size: 1.19rem;
   }
 }
